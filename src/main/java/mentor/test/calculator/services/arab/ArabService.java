@@ -6,14 +6,14 @@ import mentor.test.calculator.exception.NumberMoreException;
 import mentor.test.calculator.services.AbstractStringService;
 
 /*
-Класс для работы над  строкой с арабскими цифрами. Задача: выделить из строки значения и оператор.
-Проверить соответсвуют ли значения заданным параметрам;
+РљР»Р°СЃСЃ РґР»СЏ СЂР°Р±РѕС‚С‹ РЅР°Рґ  СЃС‚СЂРѕРєРѕР№ СЃ Р°СЂР°Р±СЃРєРёРјРё С†РёС„СЂР°РјРё. Р—Р°РґР°С‡Р°: РІС‹РґРµР»РёС‚СЊ РёР· СЃС‚СЂРѕРєРё Р·РЅР°С‡РµРЅРёСЏ Рё РѕРїРµСЂР°С‚РѕСЂ.
+РџСЂРѕРІРµСЂРёС‚СЊ СЃРѕРѕС‚РІРµС‚СЃРІСѓСЋС‚ Р»Рё Р·РЅР°С‡РµРЅРёСЏ Р·Р°РґР°РЅРЅС‹Рј РїР°СЂР°РјРµС‚СЂР°Рј;
  */
 public class ArabService extends AbstractStringService {
 
 
     /*
-    метод проверяет, соответствуют ли элементы массива арабским цифрам;
+    РјРµС‚РѕРґ РїСЂРѕРІРµСЂСЏРµС‚, СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‚ Р»Рё СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР° Р°СЂР°Р±СЃРєРёРј С†РёС„СЂР°Рј;
      */
     public boolean checkDigits(String[] array) throws Exception {
         if (array.length != 3) return false;
@@ -23,7 +23,7 @@ public class ArabService extends AbstractStringService {
             a = Integer.parseInt(array[0]);
             b = Integer.parseInt(array[2]);
         } catch (NumberFormatException e) {
-            System.err.println("Значения введены не корректно");
+            System.err.println("Р—РЅР°С‡РµРЅРёСЏ РІРІРµРґРµРЅС‹ РЅРµ РєРѕСЂСЂРµРєС‚РЅРѕ");
         }
         if (a < 1 | b < 1) throw new NumberLessException();
         if (a > 10 | b > 10) throw new NumberMoreException();

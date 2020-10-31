@@ -6,6 +6,6 @@ public class NumberMoreException extends Exception{
     public static final String ANSI_GREEN = "\u001B[32m";
 
     public NumberMoreException(){
-        System.out.println(ANSI_GREEN+"Значение должно быть не больше 10"+ANSI_RESET);
+        System.out.println(ANSI_GREEN+"Р—РЅР°С‡РµРЅРёРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ Р±РѕР»СЊС€Рµ 10"+ANSI_RESET);
     }
 }

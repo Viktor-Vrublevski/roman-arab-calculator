@@ -6,6 +6,6 @@ public class NumberLessException extends Exception{
     public static final String ANSI_CYAN = "\u001B[36m";
 
     public NumberLessException(){
-        System.out.println(ANSI_CYAN + "Значение должно быть не меньше 1"+ANSI_RESET);
+        System.out.println(ANSI_CYAN + "Р—РЅР°С‡РµРЅРёРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ РјРµРЅСЊС€Рµ 1"+ANSI_RESET);
     }
 }

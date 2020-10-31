@@ -8,7 +8,9 @@ import mentor.test.calculator.services.AbstractStringService;
 import java.util.*;
 
 /*
-Класс для работы с римскими цифрами;
+РљР»Р°СЃСЃ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ СЂРёРјСЃРєРёРјРё С†РёС„СЂР°РјРё;
+
+ */
 public class RomeService extends AbstractStringService {
 
     private static LinkedHashMap<String, Integer> map = new LinkedHashMap<String, Integer>();
@@ -28,9 +30,9 @@ public class RomeService extends AbstractStringService {
     public String[] romeArray = new String[3];
 
     /*
-       метод проверяет, соответствуют ли элементы массива римским цифрам и
-       заполняет массив romeArray , который необходим в кач-ве параметра для метода
-       getResultArab(String[] array) в классе Execute;
+       РјРµС‚РѕРґ РїСЂРѕРІРµСЂСЏРµС‚, СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‚ Р»Рё СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР° СЂРёРјСЃРєРёРј С†РёС„СЂР°Рј Рё
+       Р·Р°РїРѕР»РЅСЏРµС‚ РјР°СЃСЃРёРІ romeArray , РєРѕС‚РѕСЂС‹Р№ РЅРµРѕР±С…РѕРґРёРј РІ РєР°С‡-РІРµ РїР°СЂР°РјРµС‚СЂР° РґР»СЏ РјРµС‚РѕРґР°
+       getResultArab(String[] array) РІ РєР»Р°СЃСЃРµ Execute;
     */
     public boolean checkDigits(String[] array) throws Exception {
         boolean f1 = false;
@@ -61,9 +63,9 @@ public class RomeService extends AbstractStringService {
     }
 
     /*
-    Метод возращает чилсо из строки, записанной римскими цифрами.
-    Строка перед записыванием в кач-ве параметра, уже прошла проверку и
-      записана  по всем принципам римсокого исчесления;
+    РњРµС‚РѕРґ РІРѕР·СЂР°С‰Р°РµС‚ С‡РёР»СЃРѕ РёР· СЃС‚СЂРѕРєРё, Р·Р°РїРёСЃР°РЅРЅРѕР№ СЂРёРјСЃРєРёРјРё С†РёС„СЂР°РјРё.
+    РЎС‚СЂРѕРєР° РїРµСЂРµРґ Р·Р°РїРёСЃС‹РІР°РЅРёРµРј РІ РєР°С‡-РІРµ РїР°СЂР°РјРµС‚СЂР°, СѓР¶Рµ РїСЂРѕС€Р»Р° РїСЂРѕРІРµСЂРєСѓ Рё
+      Р·Р°РїРёСЃР°РЅР°  РїРѕ РІСЃРµРј РїСЂРёРЅС†РёРїР°Рј СЂРёРјСЃРѕРєРѕРіРѕ РёСЃС‡РµСЃР»РµРЅРёСЏ;
      */
     public int getArabFromRome(String str) {
         int result = 0;
@@ -87,7 +89,7 @@ public class RomeService extends AbstractStringService {
 
 
     /*
-    Метод возвращает  строку  римского числа;
+    РњРµС‚РѕРґ РІРѕР·РІСЂР°С‰Р°РµС‚  СЃС‚СЂРѕРєСѓ  СЂРёРјСЃРєРѕРіРѕ С‡РёСЃР»Р°;
      */
     public String getRomeFromArab(int number) {
         StringBuilder str = new StringBuilder();
@@ -105,8 +107,8 @@ public class RomeService extends AbstractStringService {
     }
 
     /*
-    Метод проверяет находятся ли в строке посторонние символы. Символы отличные от I, X, V
-    Если находятся отличные символы, выкидывается исключение.
+    РњРµС‚РѕРґ РїСЂРѕРІРµСЂСЏРµС‚ РЅР°С…РѕРґСЏС‚СЃСЏ Р»Рё РІ СЃС‚СЂРѕРєРµ РїРѕСЃС‚РѕСЂРѕРЅРЅРёРµ СЃРёРјРІРѕР»С‹. РЎРёРјРІРѕР»С‹ РѕС‚Р»РёС‡РЅС‹Рµ РѕС‚ I, X, V
+    Р•СЃР»Рё РЅР°С…РѕРґСЏС‚СЃСЏ РѕС‚Р»РёС‡РЅС‹Рµ СЃРёРјРІРѕР»С‹, РІС‹РєРёРґС‹РІР°РµС‚СЃСЏ РёСЃРєР»СЋС‡РµРЅРёРµ.
      */
     public boolean isRomeDigit(String str) {
         char[] chars = str.toCharArray();
@@ -122,7 +124,7 @@ public class RomeService extends AbstractStringService {
     }
 
     /*
-    Метод проверяет соответствует ли строка правилам римской системы исчисления;
+    РњРµС‚РѕРґ РїСЂРѕРІРµСЂСЏРµС‚ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ Р»Рё СЃС‚СЂРѕРєР° РїСЂР°РІРёР»Р°Рј СЂРёРјСЃРєРѕР№ СЃРёСЃС‚РµРјС‹ РёСЃС‡РёСЃР»РµРЅРёСЏ;
      */
     public boolean isRules(String str) {
         char[] chars = str.toCharArray();

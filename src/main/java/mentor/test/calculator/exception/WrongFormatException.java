@@ -3,6 +3,6 @@ package mentor.test.calculator.exception;
 public class WrongFormatException extends Exception{
 
     public WrongFormatException(){
-        System.err.println("Не правильный формат ввода цифр");
+        System.err.println("РќРµ РїСЂР°РІРёР»СЊРЅС‹Р№ С„РѕСЂРјР°С‚ РІРІРѕРґР° С†РёС„СЂ");
      }
 }
