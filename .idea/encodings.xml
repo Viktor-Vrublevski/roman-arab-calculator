@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/mentor/test/calculator/Execute.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/mentor/test/calculator/Main.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/mentor/test/calculator/exception/NumberLessException.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/mentor/test/calculator/exception/NumberMoreException.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/mentor/test/calculator/exception/WrongFormatException.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/mentor/test/calculator/services/AbstractStringService.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/mentor/test/calculator/services/arab/ArabService.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/mentor/test/calculator/services/rome/RomeService.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mentor/test/calculator/MainTest.java" charset="windows-1251" />
+  </component>
+</project>
